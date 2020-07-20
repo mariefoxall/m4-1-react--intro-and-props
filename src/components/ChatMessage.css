@@ -2,15 +2,22 @@
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  margin-top: 15px;
 }
 
 .username {
   margin: 0 0 0 50px;
+  padding: 2px;
 }
 
-.chat-message {
-  margin: 5px;
+.received-chat-message {
+  margin: 10px;
+  padding: 0;
+}
+
+.sent-chat-message {
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .image-bubble {
@@ -20,8 +27,19 @@
 }
 
 .message-text {
-  margin-left: 10px;
-  background-color: rgb(243, 236, 236);
   border-radius: 10px;
   padding: 10px;
+}
+
+.received-message-text {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 0 0 10px;
+  background-color: #e9e9eb;
+}
+.sent-message-text {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #1185f7;
+  color: #fff;
 }
