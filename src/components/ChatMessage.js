@@ -1,4 +1,5 @@
 import React from "react";
+import Avatar from "./Avatar";
 
 import "./ChatMessage.css";
 
@@ -15,10 +16,10 @@ const ReceivedMessage = (props) => {
     <div className="received-chat-message">
       <p className="username">{props.message.user.username}</p>
       <div className="image-bubble">
-        <img
-          className="avatar"
+        <Avatar
           src={props.message.user.avatar}
-          alt="current user"
+          size="40px"
+          username={props.message.user.username}
         />
         <p className="received-message-text">{props.message.body}</p>
       </div>
