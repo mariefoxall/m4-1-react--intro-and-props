@@ -21,6 +21,11 @@ const ReceivedMessage = (props) => {
           size="40px"
           username={props.message.user.username}
         />
+        <img
+          className="received-bubble-tip"
+          src="/assets/tip-received.svg"
+          alt="speech bubble - received"
+        />
         <p className="received-message-text">{props.message.body}</p>
       </div>
     </div>
@@ -31,6 +36,11 @@ const SentMessage = (props) => {
   return (
     <div className="sent-chat-message">
       <p className="sent-message-text">{props.message.body}</p>
+      <img
+        className="sent-bubble-tip"
+        src="/assets/tip-sent.svg"
+        alt="speech bubble - sent"
+      />
     </div>
   );
 };
