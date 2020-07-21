@@ -12,7 +12,10 @@ const Header = (props) => {
         )
         .map((participant) => {
           return (
-            <div className="header-name-avatar">
+            <div
+              className="header-name-avatar"
+              key={`${participant.username}-avatar`}
+            >
               <Avatar
                 src={participant.avatar}
                 size="40px"
