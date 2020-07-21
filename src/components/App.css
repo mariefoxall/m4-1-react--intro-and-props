@@ -3,4 +3,10 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  width: 50%;
+}
+
+.double-chat {
+  display: flex;
+  justify-content: space-around;
 }

@@ -9,17 +9,32 @@ import "./App.css";
 const App = (props) => {
   console.log(props);
   return (
-    <div className="wrapper">
-      <Header
-        participants={props.conversation.participants}
-        currentUser={props.currentUser}
-      />
-      <ChatStream
-        messages={props.conversation.messages}
-        currentUser={props.currentUser}
-      />
+    <div className="double-chat">
+      <div className="wrapper">
+        <Header
+          participants={props.conversation.participants}
+          currentUser={props.users.elaine}
+        />
+        <ChatStream
+          messages={props.conversation.messages}
+          currentUser={props.users.elaine}
+        />
 
-      <Footer />
+        <Footer />
+      </div>
+
+      <div className="wrapper">
+        <Header
+          participants={props.conversation.participants}
+          currentUser={props.users.george}
+        />
+        <ChatStream
+          messages={props.conversation.messages}
+          currentUser={props.users.george}
+        />
+
+        <Footer />
+      </div>
     </div>
   );
 };
