@@ -5,4 +5,25 @@ footer {
   */
   backdrop-filter: blur(40px);
   background-color: rgba(255, 255, 255, 0.4);
+  height: 100px;
+  width: 100%;
+  /* border: 1px solid red; */
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-input {
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  height: 70px;
+  width: 70%;
+}
+
+.footer-input:focus {
+  outline: none;
+  border: 2px solid #1185f7;
 }
